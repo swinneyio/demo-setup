@@ -334,6 +334,11 @@
                 target: https://github.com/{{ lookup('ansible.builtin.env', 'GITHUB_ORGANIZATION') }}/software-templates/blob/main/scaffolder-templates/quarkus-web-template/template.yaml
                 rules:
                   - allow: [Template]
+              - type: url
+                target: https://github.com/janus-idp/backstage-showcase/blob/main/catalog-entities/all.yaml
+              - type: url
+                target: https://github.com/janus-idp/software-templates/blob/main/showcase-templates.yaml
+
         oauth:
           enabled: true
         postgres:

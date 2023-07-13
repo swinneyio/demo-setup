@@ -1,0 +1,12 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  annotations:
+    "openshift.io/description": ""
+    "openshift.io/display-name": ""
+  labels:
+    kubernetes.io/metadata.name: openshift-devspaces
+    openshift.io/cluster-monitoring: "true"
+  name: openshift-devspaces
+spec:
