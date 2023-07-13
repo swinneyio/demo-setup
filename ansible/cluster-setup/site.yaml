@@ -142,7 +142,7 @@
     delay: 5
   - name: Pause for GitOps to be running
     pause:
-      seconds: 20
+      seconds: 60
   - name: Apply ApplicationSet for Infra Deployment
     with_items: "{{ env }}"
     kubernetes.core.helm:
@@ -158,7 +158,7 @@
           infraRevision: "{{ item.githubinfrarevision }}"
   - name: Pause for operators to complete install
     pause:
-      seconds: 90
+      seconds: 180
 - name: Install RHSSO Backstage Chart.
   hosts: 'localhost'
   tasks:
@@ -173,7 +173,7 @@
     delay: 5
   - name: Pause until Keycloak is Ready
     pause:
-      seconds: 10
+      seconds: 30
   - name: Run RHSSO Backstage Helm Chart
     with_items: "{{ env }}"
     kubernetes.core.helm:
@@ -202,7 +202,7 @@
     delay: 2
   - name: Pause until Keycloak is initialized
     pause:
-      seconds: 10
+      seconds: 30
   - name: Fetching RHSSO Admin Credentials
     with_items: "{{ env }}"
     shell: "oc -n {{ item.namespace }} get secret credential-rhsso-backstage --template='{{ '{{' }}.data.ADMIN_PASSWORD{{ '}}' }}' | base64 -d"
