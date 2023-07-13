@@ -1,6 +1,6 @@
 env:
-- namespace: "backstage"
-  companyname: "ACME Inc"
+- namespace: "developer-hub"
+  companyname: "Swinney IO"
   gitopsnamespace: "janus-argocd"
   gitopsinfranamespace: "infra-argocd"
   pipelinesnamespace: "janus-pipelines"
@@ -8,5 +8,5 @@ env:
   vaultnamespace: "vault"
   gitwebhooknamespace: "gitwebhook-operator"
   janusinstancename: "janus-dev"
-  githubinfraorganization: "janus-idp"
+  githubinfraorganization: "swinneyio"
   githubinfrarevision: "main"
