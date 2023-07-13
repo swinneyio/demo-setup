@@ -1,5 +1,5 @@
 git:
-  applicationId: bar
-  infraOrgName: janus-idp
+  applicationId: 359240
+  infraOrgName: swinneyio
   infraRevision: main
   

@@ -1,6 +1,6 @@
 destination:
   namespace: infra-argocd
 git:
-  applicationId: changeme
-  infraOrgName: janus-idp
+  applicationId: 359240
+  infraOrgName: swinneyio
   infraRevision: main
