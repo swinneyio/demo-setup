@@ -15,7 +15,7 @@ spec:
         - values-rhsso-operator.yaml
   destination:
     server: https://kubernetes.default.svc
-    namespace: backstage
+    namespace: developer-hub
   syncPolicy:
     automated:
       prune: true
