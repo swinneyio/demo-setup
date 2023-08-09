@@ -2,8 +2,12 @@ replicaCount: 1
 
 image:
   repository: quay.io/janus-idp/backstage-showcase 
+  #repository: quay.io/rhdh/developer-hub-rhel9
   pullPolicy: Always
-  tag: "sha-fa2fa01"
+  #tag: "latest"
+  tag: "sha-891c7d9"
+  #tag: "sha-fa2fa01"
+  #tag: "1.0-8"
 
 imagePullSecrets: []
 nameOverride: ""
