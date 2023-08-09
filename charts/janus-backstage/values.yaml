@@ -151,13 +151,13 @@ backstage:
         target: https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/all-components.yaml
 
       # JanusIDP Quarkus Template
-      #- type: url
-      #  target: https://github.com/janus-idp/software-templates/blob/main/scaffolder-templates/quarkus-web-template/template.yaml
-      #  rules:
-      #    - allow: [Template]
-
       - type: url
-        target: https://github.com/janus-idp/backstage-showcase/blob/main/catalog-entities/all.yaml
+        target: https://github.com/janus-idp/software-templates/blob/main/scaffolder-templates/quarkus-web-template/template.yaml
+        rules:
+          - allow: [Template]
+
+      #- type: url
+      #  target: https://github.com/janus-idp/backstage-showcase/blob/main/catalog-entities/all.yaml
 
       - type: url
         target: https://github.com/swinneyio/software-templates/blob/main/showcase-templates.yaml
