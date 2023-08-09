@@ -335,9 +335,9 @@
                 rules:
                   - allow: [Template]
               - type: url
-                target: https://github.com/janus-idp/backstage-showcase/blob/main/catalog-entities/all.yaml
+                target: https://github.com/swinneyio/backstage-showcase/blob/main/catalog-entities/all.yaml
               - type: url
-                target: https://github.com/janus-idp/software-templates/blob/main/showcase-templates.yaml
+                target: https://github.com/swinneyio/software-templates/blob/main/showcase-templates.yaml
 
         oauth:
           enabled: true
