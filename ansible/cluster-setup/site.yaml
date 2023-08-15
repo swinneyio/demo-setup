@@ -368,7 +368,7 @@
         githubOrgProvider:
           enabled: true
         ocm:
-          enabled: false
+          enabled: true
         sonarqube:
           enabled: false
         techdocs:
