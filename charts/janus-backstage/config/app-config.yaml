@@ -158,9 +158,11 @@
 {{- if .enabled }}
     ocm:
       hub:
-        name: 'replace_me'
-        url: 'replace_me'
-        serviceAccountToken: 'replace_me'
+        name: 'local-cluster'
+        url: 'https://api.homelab.swinney.io:6443'
+        serviceAccountToken: 'backstage_ocm_plugin'
+        skipTLSVerify: true
+        owner: janus-authors
 {{- end }}
 {{- end }}
     enabled:
